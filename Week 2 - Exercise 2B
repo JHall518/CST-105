@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Temperature {
+	public static void main(String args[]) {
+
+		double celsius, farenheit;
+		Scanner f = new Scanner(System.in);
+		System.out.print("Please enter a temperature in Farenheit:");
+		farenheit = f.nextDouble();
+		celsius = (farenheit - 32) * (0.5556);
+		System.out.println("The temperature in Celsius is:" + celsius);
+
+		Scanner c = new Scanner(System.in);
+		System.out.println("Please enter a temperature in Celsius:");
+		celsius = c.nextDouble();
+		farenheit = (celsius * 1.8) + (32);
+		System.out.println("The temperature in Farenheit is:" + farenheit);
+	}
+}
