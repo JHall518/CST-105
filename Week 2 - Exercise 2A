@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Exercise2A {
+  public static void main(String args[]) {
+  
+    Scanner fiver = new Scanner(System.in);
+    int digit1, digit2, digit3, digit4, digit5, answer;
+    
+    System.out.println("Please enter a 5-digit positive integer.");
+		System.out.println(fiver.nextLine());
+
+		System.out.println("Enter the first digit: ");
+		digit1 = fiver.nextInt();
+		System.out.println("Enter the second digit: ");
+		digit2 = fiver.nextInt();
+		System.out.println("Enter the third digit: ");
+		digit3 = fiver.nextInt();
+		System.out.println("Enter the fourth digit: ");
+		digit4 = fiver.nextInt();
+		System.out.println("Enter the fifth digit: ");
+
+		digit5 = fiver.nextInt();
+		System.out.print("Your answer is ");
+		answer = digit1 + digit2 + digit3 + digit4 + digit5;
+		System.out.println(answer);
+
+	}
+}
